@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body {
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  background-color: rgb(43, 43, 43);
+  color: white;
+}
+
+nav {
+  display: flex;
+  width: 70vw;
+  align-items: center;
+  flex-flow: column;
+
+  background-color: #3de07e;
+}
+#logo {
+  width: 75%;
+}
+#navicon {
+  align-self: start;
+  position: relative;
+  top: 25px;
+  left: 25px;
+}
+
+main {
+  background-color: black;
+  width: 70vw;
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer {
+  width: 70vw;
+}
+
+.poster {
+  margin-block: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 15vw;
+  color: white;
+  .img-poster {
+    width: 100%;
+  }
+  .poster-title {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  .poster-text {
+    font-size: 18px;
+  }
+  .poster-buy-button {
+    margin-top: 25px;
+    background-color: rgb(221, 61, 61);
+    border-radius: 5px;
+    height: 25px;
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+}
+
+.poster-big {
+  width: 25vw;
+  background-color: white;
+  color: black;
+  .poster-buy-button {
+    color: white;
+    font-size: 18px;
+    padding: 15px 35px;
+    margin-bottom: 15px;
+  }
+  .poster-buy-button,
+  .poster-text,
+  .poster-title {
+    margin-inline: 25px;
+  }
+}
+
+.poster-buy-button:before {
+  content: "Oh, take my money!";
+}
